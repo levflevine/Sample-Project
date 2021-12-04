@@ -75,15 +75,18 @@ function buildCharts(sample) {
 
     var yticks = otu_ids.sort((a,b)=> a-b).reverse().slice(0,10);
     console.log("Yticvks: " + yticks);
+    console.log("Xticvks: " + otu_labels);
 
     // 8. Create the trace for the bar chart. 
-    var barData = [{x: otu_labels, y: yticks}
+    var barData = [{x: otu_labels, y: yticks, type:'bar'}
     ];
     // 9. Create the layout for the bar chart. 
-    var barLayout = {title: "title"
+    var barLayout = {title: "title",
+    xaxis: {title: "xTitle"},
+    yaxis: {title: "yTitle"}
      
    };
     // 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot("bar-plot", barData, barLayout);
+    Plotly.newPlot("bar", barData, barLayout);
   });
 }

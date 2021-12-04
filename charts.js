@@ -77,7 +77,7 @@ function buildCharts(sample) {
     console.log("Yticvks: " + yticks);
 
     // 8. Create the trace for the bar chart. 
-    var barData = [{x: otu_lables, y: yticks}
+    var barData = [{x: otu_labels, y: yticks}
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {title: "title"

@@ -77,14 +77,13 @@ function buildCharts(sample) {
     console.log("Yticvks: " + yticks);
 
     // 8. Create the trace for the bar chart. 
-    //var barData = [
-      
-    //];
+    var barData = [{x: otu_lables, y: yticks}
+    ];
     // 9. Create the layout for the bar chart. 
-    //var barLayout = {
+    var barLayout = {title: "title"
      
-   //};
+   };
     // 10. Use Plotly to plot the data with the layout. 
-    
+    Plotly.newPlot("bar-plot", barData, barLayout);
   });
 }

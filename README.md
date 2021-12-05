@@ -15,9 +15,9 @@ The goal of the project is to discover and document bacterial species that have 
 
 #### Tools
 
-- Java Script
+- JavaScript
 - Plotly Library
-- D3 Library
+- D3.json() Library
 - HTML
 - CSS
 - Bootstrap framework

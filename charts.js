@@ -78,7 +78,7 @@ function buildCharts(sample) {
     console.log("Xticvks: " + otu_labels);
 
     // 8. Create the trace for the bar chart. 
-    var barData = [{x: otu_labels, y: yticks, type:'bar'}
+    var barData = [{x: otu_labels, y: yticks, type:'bar', orientation: 'h'}
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {title: "title",
